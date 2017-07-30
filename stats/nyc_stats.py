@@ -17,6 +17,7 @@ def num_rainy_days(filename):
     WHERE cast(rain as integer) = 1
     """
     rainy_days = pandasql.sqldf(q, locals())
+    print rainy_days
     return rainy_days
 
 
